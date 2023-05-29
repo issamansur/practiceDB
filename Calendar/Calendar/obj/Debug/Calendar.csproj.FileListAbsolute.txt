@@ -1,0 +1,12 @@
+D:\app\Calendar\Calendar\bin\Debug\Calendar.exe.config
+D:\app\Calendar\Calendar\bin\Debug\Calendar.exe
+D:\app\Calendar\Calendar\bin\Debug\Calendar.pdb
+D:\app\Calendar\Calendar\obj\Debug\Calendar.csproj.AssemblyReference.cache
+D:\app\Calendar\Calendar\obj\Debug\Calendar.csproj.SuggestedBindingRedirects.cache
+D:\app\Calendar\Calendar\obj\Debug\Calendar.Form1.resources
+D:\app\Calendar\Calendar\obj\Debug\Calendar.FormForCRUD.Form2.resources
+D:\app\Calendar\Calendar\obj\Debug\Calendar.Properties.Resources.resources
+D:\app\Calendar\Calendar\obj\Debug\Calendar.csproj.GenerateResource.cache
+D:\app\Calendar\Calendar\obj\Debug\Calendar.csproj.CoreCompileInputs.cache
+D:\app\Calendar\Calendar\obj\Debug\Calendar.exe
+D:\app\Calendar\Calendar\obj\Debug\Calendar.pdb
