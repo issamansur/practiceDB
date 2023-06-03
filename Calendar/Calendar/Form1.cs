@@ -150,9 +150,6 @@ namespace Calendar
                 .OrderBy(oe => oe.DateStart)
                 .ToList();
 
-            oEvents.Reverse();
-            aEvents.Reverse();
-
             tableLayoutPanel.Controls.Clear();
 
             foreach (Event ev in aEvents.Concat(oEvents))
@@ -183,6 +180,8 @@ namespace Calendar
 
         private void ShowEvents(DateTime dateTime)
         {
+            if (chkBoxSearch.Checked)
+                chkBoxSearch.Checked = false;
             List<Event> aEvents = CDBC.Events.AsNoTracking()
                 .Where(
                     ae => ae.EveryYear && ae.DateStart.Month == dateTime.Month && ae.DateStart.Day == dateTime.Day)
@@ -194,9 +193,6 @@ namespace Calendar
                     oe => !oe.EveryYear && (oe.DateStart.Date <= dateTime.Date && dateTime.Date <= oe.DateEnd.Date))
                 .OrderBy(oe => oe.Title)
                 .ToList();
-
-            oEvents.Reverse();
-            aEvents.Reverse();
 
             groupBoxEvents.Text = $"События на {dateTime.ToShortDateString()} ({oEvents.Count + aEvents.Count})";
 
