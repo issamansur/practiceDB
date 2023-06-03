@@ -20,6 +20,7 @@ namespace Calendar.HelpfulForms
         {
             EditEvent = editEvent;
 
+            dtPickerStart.Value = editEvent.DateStart;
             txtBoxTitle.Text = editEvent.Title;
             dtPickerEnd.Value = editEvent.DateEnd;
             chkBoxAllDay.Checked = editEvent.AllDay;
